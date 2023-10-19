@@ -13,12 +13,13 @@ void draw(){
   text("Input: "+line,50,100);
 }
 void keyPressed(){
-  if(key>='A'&&key<='Z') line+=key;
-  if(key>='a'&&key<='z') line+=key;
+  if(key>='A'&&key<='Z') {line+=key;da.play();}
+  if(key>='a'&&key<='z') {line+=key;da.play();}
   if(key==BACKSPACE&&line.length()>0){
   line=line.substring(0,line.length()-1);
   ouch.play();
   }
-  if(key==ENTER)【{{{{{[{
+  if(key==ENTER){
   dingdong.play();
+  }
 }
